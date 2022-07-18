@@ -4,17 +4,41 @@
     box-sizing: border-box;
 }
 
-.container{
+#container{
     width: 70%;
     height: calc(100vh - 120px);
     margin: auto;
     margin-top: 60px;
     margin-bottom: 60px;
-    background-color: blue;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .cards{
-    width: calc(100% / 6);
+    width: calc(100% / 3);
+    border: 5px solid #001858;
+    background-color: #fef6e4;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.name{
+    color:#001858;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.role{
+    color:#001858;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.pic{
+    text-align: center;
+    height: 50%;
+    object-fit: contain;
+    
 }

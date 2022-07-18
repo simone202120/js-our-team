@@ -1,3 +1,4 @@
+let container = document.getElementById('container');
 let team = [
                 {
                     'nome': 'Wayne Barnett',
@@ -37,11 +38,20 @@ let team = [
 
             ];
 
-for( let chiave in team){
+/*for( let chiave in team){
 
-    let cards = document.createElement ('div');
-    cards.classList.add('cards');
-    cards.innerHTML = chiave + (team[chiave]);
+    let persona = document.createElement ('div');
     console.log(chiave);
     console.log(team[chiave]);
+}*/
+
+for( i=0; i<team.length; i++){
+    console.log (team[i].nome);
+    container.innerHTML += `
+        <div class='cards'>
+            <div class='name'>${team[i].nome}</div>
+            <div class='role'>${team[i].ruolo}</div>
+            <div class='pic'>${team[i].foto}</div>
+        </div>
+    `
 }
