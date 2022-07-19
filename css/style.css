@@ -36,9 +36,7 @@
     font-size: 13px;
     margin-bottom: 5px;
 }
-.pic{
-    text-align: center;
-    height: 50%;
-    object-fit: contain;
-    
+.pic img{
+    width: 100%;
+    border-radius: 30px;
 }
